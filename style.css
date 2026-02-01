@@ -1,0 +1,168 @@
+/*
+	Site Footer Styles
+	Matches header color and includes link styling
+*/
+.site-footer {
+	background-color: #2193b0; /* Match header color */
+	text-align: center;
+	padding: 20px 0 16px 0;
+	color: #fff;
+	box-shadow: 0 -2px 8px rgba(33, 147, 176, 0.10); /* Subtle shadow at top */
+	margin-top: 40px;
+}
+
+.footer-link {
+	color: #e0f7fa;
+	text-decoration: underline;
+	font-size: 1.1em;
+	font-weight: 500;
+	transition: color 0.2s;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+	color: #00b8a9;
+}
+/*
+	Info Section Styles
+	Two columns: image and text, centered and responsive
+*/
+.info-section {
+	background-color: #f4fcfd; /* Very light blue for contrast */
+	padding: 50px 0;
+}
+
+.info-container {
+	max-width: 900px;
+	margin: 0 auto;
+	display: table; /* Simple two-column layout */
+	width: 90%;
+}
+
+.info-image, .info-text {
+	display: table-cell;
+	vertical-align: middle;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+
+.info-image img {
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	box-shadow: 0 2px 12px rgba(33, 147, 176, 0.10);
+}
+
+.info-text {
+	color: #217693;
+	font-size: 1.1em;
+}
+
+.info-text h3 {
+	color: #2193b0;
+	margin-top: 0;
+	font-size: 1.5em;
+}
+
+.info-text ul {
+	padding-left: 20px;
+	margin-top: 18px;
+}
+
+.info-text li {
+	margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+	.info-container {
+		display: block;
+	}
+	.info-image, .info-text {
+		display: block;
+		width: 100%;
+		padding: 0;
+		margin-bottom: 30px;
+	}
+	.info-text {
+		margin-bottom: 0;
+	}
+}
+/*
+	Site Header Styles
+	Simple, matching the CTA palette
+*/
+.site-header {
+	background-color: #2193b0; /* Deep blue from the palette */
+	padding: 18px 0 12px 0;
+	text-align: center;
+	box-shadow: 0 2px 8px rgba(33, 147, 176, 0.10); /* Subtle shadow */
+}
+
+.site-title {
+	color: #fff;
+	font-size: 1.7em;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	margin: 0;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+/*
+	CTA Banner Styles
+	Nature-inspired blue & teal palette, modern font, and clear layout
+*/
+
+body {
+	margin: 0;
+	font-family: 'Segoe UI', Arial, sans-serif; /* Modern, easy-to-read font */
+	background-color: #e6f7fa; /* Light teal background for calmness */
+}
+
+.cta-banner {
+		/* Banner background with image and overlay */
+		background:
+			linear-gradient(rgba(33, 147, 176, 0.65), rgba(109, 213, 237, 0.45)), /* Light blue/teal overlay */
+			url('img/cta-bg.jpg') center/cover no-repeat;
+		color: #fff;
+		text-align: center;
+		padding: 80px 20px 100px 20px; /* Tall banner with space */
+		box-shadow: 0 4px 24px rgba(33, 147, 176, 0.15); /* Soft shadow for depth */
+}
+
+.cta-heading {
+	font-size: 2.5em; /* Large, bold heading */
+	margin-bottom: -10px;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.cta-description {
+	font-size: 1.2em;
+	margin-bottom: 35px;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #e0f7fa; /* Softer white for description */
+  text-shadow: 0 0 5px #217693;
+}
+
+.cta-button {
+	display: inline-block;
+	background-color: #00b8a9; /* Bright teal button */
+	color: #fff;
+	padding: 18px 40px;
+	font-size: 1.1em;
+	font-weight: 600;
+	text-decoration: none;
+	border-radius: 30px;
+	box-shadow: 0 2px 8px rgba(0, 184, 169, 0.18);
+	transition: background 0.2s, box-shadow 0.2s;
+	border: none;
+	cursor: pointer;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+	background-color: #2193b0; /* Darker blue on hover */
+	box-shadow: 0 4px 16px rgba(33, 147, 176, 0.22);
+}
